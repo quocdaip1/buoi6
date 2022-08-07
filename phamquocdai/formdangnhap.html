@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #header{
+            background: url(images/background_menu.jpg);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            padding-top: 20px;
+        }
+        #header .nav{
+            display: flex;
+            background: red;
+            margin: 0 auto;
+            padding: 20px;
+            width: 80%;
+        }
+        #header .nav .logo{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin-left: 20px;    
+        }
+        #header .nav .logo .text_logo{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: -14px;
+            
+        }
+        #header .nav .menu{
+            width: 50%;
+        }
+        #header .nav .menu ul{
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+        #header .nav .menu ul li a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+        }
+        #header .content {
+                text-align: center;
+                color: white;
+                line-height: 80px;
+                padding: 241px 30px;
+        }
+        #header .content a{
+            background: red;
+            padding: 20px 60px;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        #header .content h1{
+            font-size: 100px;
+            
+        }
+        #header .content h1 .text{
+            color: red;
+        }
+        #header .content p{
+            color: #95a5a6;
+            font-size: 25px;
+        }
+        #header .nav .logo img{
+            height: 25px;
+            width: 46px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="nav">
+            <div class="logo">
+                <img src="images/logo_nav.png" alt="">
+                <p class="text_logo">industrial</p>
+            </div>
+        
+            <div class="menu">
+                <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>  
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>POWER OF <span class="text">HTML CSS.</span></h1>
+            <P>Language can create a lot of beauty on the website</P>
+            <a href="#">Learn More</a>
+           
+        </div>
+    </div>
+</body>
+</html>

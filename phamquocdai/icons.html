@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        a{
+            text-decoration: none;
+            display: inline-block;
+            background: red;
+            width: 40px;
+            height: 40px;
+            margin: 4px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .products_list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .products_list .product{
+            width: calc(100% / 4 - 12px);
+            border: 1px solid orange;
+            height: 30vh;
+            margin: 5px;
+        }
+        .products_list .product{
+            height: 100px;
+            width: 100px;
+            background: green;
+        }
+        @media only screen and (max-width: 900px){
+            .products_list .product{
+                width: calc(100% / 2 - 12px);
+            }
+        }
+        @media only screen and (max-width: 400px){
+            .products_list .product{
+                width: calc(100% - 12px);
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <a href="#"><i class=" fa fa-cloud "></i></a>
+    <a href="#"><i class=" fa fa-facebook"></i></a>
+    <a href="#"><i class=" fa fa-twitter"></i></a>
+    <a href="#"><i class=" fa fa-youtube"></i></a>
+    <a href="#"><i class=" fa fa-instagram"></i></a>
+
+        <div class="products_list">
+            <div class="product">ok</div>
+            <div class="product">ok</div>
+            <div class="product">ok</div>
+            <div class="product">ok</div>
+
+        </div>
+
+</body>
+</html>

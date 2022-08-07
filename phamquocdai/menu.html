@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        
+        header .nav .menu1{
+            display: flex;
+            list-style: none;
+            
+        }
+        header .nav .menu1 li{
+            padding: 20px;
+            background: greenyellow;
+            position: relative;
+
+        }
+        a{
+            text-decoration: none;
+        }
+
+        header .nav .menu1 li:hover ul {
+            display: block;
+            list-style: none;
+
+        }
+    
+   
+        header .nav .menu1  .menu2 {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -40%;
+            
+        }
+        header .nav .menu1  .menu2 li{
+            display: block;
+            list-style: none;
+            border-bottom: solid 2px; 
+        }
+        header .nav .menu1 .menu2 .menu3{
+            display: none;
+        
+        }
+        header .nav .menu1 .menu2 li:hover .menu3{
+            display: block;
+            position: absolute;
+            top: -1%;
+        }
+        header .nav .menu1  .menu2 li:last-child{
+            border-bottom: none;    
+        }
+      
+
+       
+    
+    </style>
+</head>
+<body>
+    
+
+</body>
+        <header>
+            <p>test</p>
+          <div class="nav">
+                <ul class="menu1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a>
+                        <ul class="menu2">
+                            <li><a href="#">lap1</a></li>
+                            <li><a href="#">lap2</a></li>
+                            <li><a href="#">lap3</a>
+                                <ul class="menu3">
+                                    <li><a href="#">lap1</a></li>
+                                    <li><a href="#">lap2</a></li>
+                                    <li><a href="#">lap3</a></li>
+                                    <li><a href="#">lap4</a></li>
+                                    <li><a href="#">lap5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">lap4</a>
+                                <ul class="menu3">
+                                    <li><a href="#">lap1</a></li>
+                                    <li><a href="#">lap2</a></li>
+                                    <li><a href="#">lap3</a></li>
+                                    <li><a href="#">lap4</a></li>
+                                    <li><a href="#">lap5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">lap5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Prices</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+          </div>
+        </header>
+</html>

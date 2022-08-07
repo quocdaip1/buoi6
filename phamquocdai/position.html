@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            width:400px;
+            height: 400px;
+            background-color: red;
+            
+        }
+        a:hover{
+            color: red;
+            font-size: 50px;
+        }
+        .sub1{
+            background: green;
+            width: 100px;
+            height: 100px;
+        }
+        .container:hover .sub1{
+            background: purple;
+        } 
+        .sub2{
+            background: pink;
+            width: 100px;
+            height: 100px;
+        }
+        .sub1:hover ~.sub2{
+            background: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text">
+        <ul class="menu1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>  
+        </ul>
+    </div>
+    <div class="container">
+        <div class="sub1">
+
+        </div>
+        <div class="sub2">
+
+        </div>
+    </div>
+</body>
+</html>
